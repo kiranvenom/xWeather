@@ -22,7 +22,7 @@ const Weather = () => {
 		setloading(true);
 		try {
 			let { data } = await axios.get(
-				`http://api.weatherapi.com/v1/current.json?key=${
+				`https://api.weatherapi.com/v1/current.json?key=${
 					import.meta.env.VITE_API_KEY
 				}&q=${locationMy}&aqi=no`,
 			);
